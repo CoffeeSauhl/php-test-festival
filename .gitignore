@@ -1,0 +1,4 @@
+node_modules
+config/prod/database.json
+.idea
+package-lock.json

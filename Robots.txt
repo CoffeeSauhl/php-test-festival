@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /assets/
+Disallow: /node_module/
+Allow: /assets/img/
