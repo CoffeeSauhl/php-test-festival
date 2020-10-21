@@ -13,3 +13,7 @@
 error log => Git hub Delfine-Etienne movie land ?
 Cyril => error github
 Index / ErrorService
+```
+
+``` 
+Broken BDD (config files)
