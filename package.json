@@ -1,0 +1,22 @@
+{
+  "name": "php-test-festival",
+  "version": "1.0.0",
+  "description": "-npm install bulma",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gregoryturchino/php-test-festival.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gregoryturchino/php-test-festival/issues"
+  },
+  "homepage": "https://github.com/gregoryturchino/php-test-festival#readme",
+  "dependencies": {
+    "bulma": "^0.9.1"
+  }
+}

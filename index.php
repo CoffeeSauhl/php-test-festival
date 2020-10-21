@@ -45,8 +45,18 @@ register_shutdown_function(function($error = null){
 
 //$page = filter_input(INPUT_GET, "page");
 //var_dump($_SERVER);
-$page = $_SERVER['REDIRECT_URL'];
+//$page = $_SERVER['REDIRECT_URL'];
 var_dump($page);
+
+if (isset($_SERVER['REDIRECT_URL'])) {
+    $page = $_SERVER['REDIRECT_URL'];
+}
+elseif (isset($_SERVER['PATH_INFO'])) {
+    $page = $_SERVER['PATH_INFO'];
+}
+else {
+    $page = '/';
+}
 
 $root = "/festival/";
 
