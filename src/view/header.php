@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src\public\css\style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+    <meta name="google-site-verification" content="rFNj65ELNd3uvaaGCA2xWmy4VyTQQCHbjOJqcmE2sHs" />
     <title><?= $this->title ?></title>
 </head>
 

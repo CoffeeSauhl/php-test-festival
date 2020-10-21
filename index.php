@@ -7,6 +7,7 @@ require ('src/controller/Panier.php');
 require ('src/controller/Profil.php');
 require ('src/controller/Add.php');
 require ('src/model/Model.php');
+require ('src/service/ErrorService.php');
 
 
 $contents = file_get_contents(__DIR__ . '/src/config/env.json');
@@ -20,6 +21,27 @@ echo ENV;
 //} else {
 //
 //}
+
+//cache les erreurs :
+ini_set('display_errors', 0);
+
+$error = new ErrorService();
+set_error_handler([$error, "logError"]);
+
+register_shutdown_function(function($error = null){
+
+    if (!$error) {
+        $error = error_get_last();
+    }
+
+    $logger = new ErrorService();
+    $logger->logError(
+        $error['type'],
+        $error['message'],
+        $error['file'],
+        $error['line']);
+});
+
 
 //$page = filter_input(INPUT_GET, "page");
 //var_dump($_SERVER);
@@ -57,5 +79,7 @@ if (!isset($controller)) {
 //public function show(...$id) {
 //
 //}
+
+
 
 ?>
