@@ -17,7 +17,7 @@
     
     <header>
         <nav>
-            <a class="button is-link" href="/festival">Home</a>
+            <a class="button is-link" href=".">Home</a>
         <?php if (isset($_SESSION['admin']) && $_SESSION['admin'] == true) {?>
             <a class="button is-link" href="?page=add">Ajout Programmation</a>
         <?php } ?>
