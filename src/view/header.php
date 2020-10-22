@@ -37,5 +37,6 @@
             <a class="button is-primary" href="/festival/login" rel="nofollow">Sign in</a>
             <a class="button is-primary" href="/festival/login?action=signup" rel="nofollow">Sign up</a>
         <?php } ?>
+            <a class="button is-warning" href="/festival/privacy">Privacy</a>
         </nav>
     </header>
